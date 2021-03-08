@@ -1,5 +1,15 @@
-//dichiarare il vincitore
+//ESERCIZIO 1
 
+
+function palindrome(parola) {
+  var nospazi = /[\W_]/g; //per rimuovere spazi e caratteri speciali
+  var azzeracaratteri = parola.toLowerCase().replace(nospazi, ''); //per togliere i caratteri grandi,rimpicciolirli
+  var reverse = azzeracaratteri.split('').reverse().join(''); //divide la stringa in una stringa a più caratteri, reverse inverte l'ordine, join le riunisce
+  return reverse === azzeracaratteri;  //metto il risultato in una nuova variabile,se il risultato è uguale,darà vero
+}
+console.log(palindrome(prompt("Dimmi una parola palindroma")));
+
+//ESERCIZIO 2
 
 //chiedo ad utente pari-dispari e un numero da 1 a 5
 var pariDispari = prompt("Scrivi pari , o dispari");
