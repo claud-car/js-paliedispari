@@ -32,27 +32,12 @@ document.getElementById('risultato').innerHTML = "La somma dei numeri è : " + s
 
 //Casistica e stampo vincitore in html
 if (pariDispari == "pari" && somma(numero,numeropc)%2 == 0){
-  document.getElementById('risultato').innerHTML = "La somma dei numeri è : " + somma(numero,numeropc) + "<br>" + " L'utente ha vinto";
-  // console.log("L'utente ha vinto");
+  document.getElementById('risultato').innerHTML = "La somma dei numeri è : " + somma(numero,numeropc) + "<br>" + "<strong>" + " L'utente ha vinto" + "</strong>" ;
 } else if (pariDispari == "dispari" && somma(numero,numeropc)%2 == 1){
-  document.getElementById('risultato').innerHTML = "La somma dei numeri è : " + somma(numero,numeropc) + "<br>" + " L'utente ha vinto";
-  // console.log("L'utente ha vinto");
+  document.getElementById('risultato').innerHTML = "La somma dei numeri è : " + somma(numero,numeropc) + "<br>" + "<strong>" + " L'utente ha vinto" + "</strong>"
 } else{
-  document.getElementById('risultato').innerHTML = "La somma dei numeri è : " + somma(numero,numeropc) + "<br>" + " Il computer ha vinto";
-  // console.log("Il computer ha vinto");
+  document.getElementById('risultato').innerHTML = "La somma dei numeri è : " + somma(numero,numeropc) + "<br>" + "<strong>" + " Il computer ha vinto" + "</strong>"
 }
-
-
-
-// || pariDispari == "dispari" && somma()%2
-
-
-
-
-
-
-
-
 
 
 
